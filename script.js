@@ -18,4 +18,22 @@ $(document).ready(function () {
       });
   })
   function showMessage() {
-    alert("TBH, I have a crush on you.");}
+    Swal.fire({
+      title: "<strong> NAH I'D WIN! <u></u></strong>",
+      icon: "info",
+      html: `
+       gua jago
+      `,
+      showCloseButton: true,
+      showCancelButton: true,
+      focusConfirm: false,
+      confirmButtonText: `
+        <i class="fa fa-thumbs-up"></i> iya
+      `,
+      confirmButtonAriaLabel: "Thumbs up, great!",
+      cancelButtonText: `
+        <i class="fa fa-thumbs-down"></i> ofc
+      `,
+      cancelButtonAriaLabel: "Thumbs down"
+    });
+  }
