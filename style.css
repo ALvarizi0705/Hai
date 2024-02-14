@@ -156,10 +156,4 @@ body {
     50% {
       transform: scaleX(0.85);
     }
-      
   }
-  audio {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-    visibility: hidden;}
