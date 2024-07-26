@@ -17,13 +17,11 @@ $(document).ready(function () {
         );
       });
   })
-  function showMessage() {
+ function showAlert() {
     Swal.fire({
-      title: "<strong> NAH I'D WIN! <u></u></strong>",
+      title: "<strong> Will you be my gf? <u></u></strong>",
       icon: "info",
-      html: `
-       gua jago
-      `,
+      html: `Can we?`,
       showCloseButton: true,
       showCancelButton: true,
       focusConfirm: false,
@@ -35,5 +33,9 @@ $(document).ready(function () {
         <i class="fa fa-thumbs-down"></i> ofc
       `,
       cancelButtonAriaLabel: "Thumbs down"
+    }).then((result) => {
+      if (result.isConfirmed || result.isDismissed) {
+        Swal.fire('Love u babe');
+      }
     });
   }
