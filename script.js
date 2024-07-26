@@ -17,11 +17,13 @@ $(document).ready(function () {
         );
       });
   })
- function showAlert() {
+  function showMessage() {
     Swal.fire({
-      title: "<strong> Will you be my gf? <u></u></strong>",
+      title: "<strong> Helloooo <u></u></strong>",
       icon: "info",
-      html: `Can we?`,
+      html: `
+       Will You Be My Gf??!
+      `,
       showCloseButton: true,
       showCancelButton: true,
       focusConfirm: false,
@@ -33,9 +35,5 @@ $(document).ready(function () {
         <i class="fa fa-thumbs-down"></i> ofc
       `,
       cancelButtonAriaLabel: "Thumbs down"
-    }).then((result) => {
-      if (result.isConfirmed || result.isDismissed) {
-        Swal.fire('Love u babe');
-      }
     });
   }
